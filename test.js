@@ -11,11 +11,21 @@ var mochasync =(fn)=>{
 }
 
 describe('check the inserted data in list', function () {
- it('should return newly added name',  mochasync(async()=> {
-        let content={"name":"girish"}
-        let data = await requester.PostRequest(content);
-        expect("girish").to.equal(data.data);
+    it('should return newly added name',  mochasync(async()=> {
+            let content={"name":"girish"}
+            let data = await requester.PostRequest(content);
+            expect("girish").to.equal(data.data);
+        })
+    );
+    it('demo test only should always pass',  mochasync(async()=> {
+        
+        expect("girish").to.equal("girish");
     })
-);
+    );
+    it('demo test only should always failed',  mochasync(async()=> {
+        
+        expect("girish").to.equal("girih");
+    })
+    );
 });
 
