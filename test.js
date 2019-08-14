@@ -17,5 +17,15 @@ describe('check the inserted data in list', function () {
         expect("girish").to.equal(data.data);
     })
 );
+it('demo test only should always pass',  mochasync(async()=> {
+        
+    expect("girish").to.equal("girish");
+})
+);
+it('demo test only should always failed',  mochasync(async()=> {
+    
+    expect("girish").to.equal("girih");
+})
+);
 });
 
