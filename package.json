@@ -4,7 +4,8 @@
   "description": "todo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js",
+    "build": "node ."
   },
   "author": "",
   "license": "ISC",
