@@ -19,6 +19,8 @@ app.get('/',async(req,res,next) =>{
 })
 app.get('/:name',async(req,res,next) =>{
     let name = req.params.name;
+    let temp="new var";
+    console.log(temp);
     res.send(list.find(e=>e==name));
 })
 app.delete('/:name',async(req,res,next) =>{
