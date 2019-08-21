@@ -24,7 +24,7 @@ it('demo test only should always pass',  mochasync(async()=> {
 );
 it('demo test only should always failed',  mochasync(async()=> {
     
-    expect("girish").to.equal("girih");
+    expect("girish").to.equal("girish");
 })
 );
 });

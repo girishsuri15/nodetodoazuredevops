@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "build": "node ."
+    "build": "webpack",
+    "devbuild":"rm -rf dist && webpack --config webpack.config.js",
+    "start": "node ./dist/ ."
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,8 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.0"
+    "mocha": "^6.2.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
   }
 }
