@@ -26,6 +26,9 @@ app.get('/:name',async(req,res,next) =>{
 app.delete('/:name',async(req,res,next) =>{
     res.send(list.pop());
 })
+app.get('/something',async(req,res)=>{
+    res.send("app is live");
+})
 
 app.listen(8080, function (err) {
     console.log("server is running")
